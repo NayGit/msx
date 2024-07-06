@@ -1,0 +1,8 @@
+{
+  "name": "NayMSX",
+  "version": "1.0",
+  "parameter": "content: {PREFIX}{SERVER}/msx/menu.json",
+  "launcher": {
+    "image": "https://naygit.github.io/msx/icon.jpg"
+  }
+}

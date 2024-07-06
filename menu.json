@@ -1,0 +1,224 @@
+{
+  "headline": "Nay{txt:msx-blue:MSX}",
+  "extension": "{col:msx-white}{ico:msx-white:event} {now:date:D, dd.mm.yyyy}{tb}{ico:msx-white:access-time} {now:time:hh:mm}",
+  "type": "list",
+  "header": {
+  },
+  "footer": {
+  },
+  "overlay": {
+    "items": [
+      {
+        "type": "space",
+        "offset": "-1,0.90,2,0",
+        "layout": "0,5,12,1",
+        "alignment": "center",
+        "color": "msx-black",
+        "text": "Приложение полностью бесплатное и использует публичные ссылки для получения информации.{br}Вся доступная информация используется исключительно в познавательных целях."
+      }
+    ]
+  },
+  "inserts": [
+    {
+      "position": "context:apps",
+      "offset": "0,0.25,0,-0.5",
+      "area": "0,1,12,5",
+      "template": {
+        "offset": "0,-0.5,0,0"
+      },
+      "items": [
+        {
+          "type": "space",
+          "layout": "0,0,12,1",
+          "headline": "Apps"
+        }
+      ]
+    },
+    {
+      "position": "context:lamps",
+      "offset": "0,0.25,0,-0.5",
+      "area": "0,1,12,5",
+      "template": {
+        "offset": "0,-0.5,0,0"
+      },
+      "items": [
+        {
+          "type": "space",
+          "layout": "0,0,12,1",
+          "headline": "Лампы"
+        }
+      ]
+    },
+    {
+      "position": "context:stores",
+      "offset": "0,0.25,0,-0.5",
+      "area": "0,1,12,5",
+      "template": {
+        "offset": "0,-0.5,0,0"
+      },
+      "items": [
+        {
+          "type": "space",
+          "layout": "0,0,12,1",
+          "headline": "Stores"
+        }
+      ]
+    },
+    {
+      "position": "context:tests",
+      "offset": "0,0.25,0,-0.5",
+      "area": "0,1,12,5",
+      "template": {
+        "offset": "0,-0.5,0,0"
+      },
+      "items": [
+        {
+          "type": "space",
+          "layout": "0,0,12,1",
+          "headline": "Test"
+        }
+      ]
+    }
+  ],
+  "template": {
+    "type": "default",
+    "offset": "0,0,0,0",
+    "layout": "0,0,2,2",
+    "alignment": "center|badge-center|stamp-center",
+    "group": "id:unknown"
+  },
+  "items": [
+    {
+      "break": "context:apps",
+      "group": "id:apps",
+      "stamp": "Atodo",
+      "image": "http://atodo.fun/assets/images/icon.png?v=0.1",
+      "action": "menu:request:interaction:menu@http://atodo.fun/fun.html"
+    },
+    {
+      "group": "id:apps",
+      "stamp": "Atodo WEB",
+      "image": "http://atodo.fun/assets/images/icon.png?v=0.1",
+      "action": "link:http://msx.atodo.fun/",
+      "tag": "Web"
+    },
+    {
+      "group": "id:apps",
+      "stamp": "MOOVIES",
+      "image": "http://moovies.uz/images/logo.png",
+      "action": "menu:request:interaction:init@http://moovies.uz/index.html"
+    },
+    {
+      "group": "id:apps",
+      "stamp": "Movielab",
+      "image": "https://movielab.one/icons/Icon-192.png",
+      "action": "menu:https://movielab.fun/msx/menu.json",
+      "tag": "ad",
+      "tagColor": "msx-red"
+    },
+    {
+      "break": "context:lamps",
+      "group": "id:lamps",
+      "stamp": "Prisma",
+      "image": "https://prisma.ws/icons/apple-touch-icon.png",
+      "action": "link:https://prisma.ws/"
+    },
+    {
+      "group": "id:lamps",
+      "stamp": "Lampa",
+      "image": "http://lampa.mx/icons/apple-touch-icon.png",
+      "action": "link:http://lampa.mx/",
+      "tag": "ad",
+      "tagColor": "msx-red"
+    },
+    {
+      "break": "context:stores",
+      "group": "id:stores",
+      "stamp": "NoName",
+      "image": "http://msx.nnmtv.fun/msx/img/noname.png",
+      "action": "content:http://msx.nnmtv.fun/msx/start.json"
+    },
+    {
+      "group": "id:stores",
+      "stamp": "WALS",
+      "image": "https://raw.githubusercontent.com/wals09/msx/main/img/wals.png",
+      "action": "content:https://wals09.github.io/msx/menu.json"
+    },
+    {
+      "group": "id:stores",
+      "stamp": "AppFXML",
+      "image": "http://msx.appfxml.com/msx/appfxmlstore_m.png",
+      "action": "content:http://msx.appfxml.com/msx/content.json"
+    },
+    {
+      "group": "id:stores",
+      "stamp": "msxplayer.ru",
+      "image": "http://msxplayer.ru/assets/msx-icon.png",
+      "action": "menu:request:interaction:menu@http://plugins.msxplayer.ru/store.html"
+    },
+    {
+      "group": "id:stores",
+      "stamp": "v4.msxplayer.ru",
+      "image": "http://msxplayer.ru/assets/msx-icon.png",
+      "action": "menu:request:interaction:json:eyJoYW5kbGVySWQiOiJzdG9yZSIsInJlcXVlc3QiOiJtZW51In0=@http://v4.msxplayer.ru/plugins/interactions/msxplayer/"
+    },
+    {
+      "group": "id:stores",
+      "stamp": "ARKMV Station",
+      "action": "content:http://arkmv.ru/msx/start.json"
+    },
+    {
+      "group": "id:stores",
+      "stamp": "Launcher MSX",
+      "image": "http://msx.benzac.de/img/icon_raw.png",
+      "action": "menu:request:interaction:init@http://launcher.msx.benzac.de/interaction"
+    },
+    {
+      "break": "context:tests",
+      "group": "id:tests",
+      "stamp": "ForkPlayer",
+      "image": "http://msx.appfxml.com/msx/fork2.png",
+      "action": "link:http://browser.appfxml.com/"
+    },
+    {
+      "group": "id:tests",
+      "stamp": "DRM-Play",
+      "image": "http://drm-play.com/icon.png",
+      "action": "content:http://drm-play.com/msx/content.json"
+    },
+    {
+      "group": "id:tests",
+      "stamp": "DRM-Play",
+      "image": "https://ott.drm-play.com/stbPlayer/400x400.png",
+      "action": "link:http://ott.drm-play.com/"
+    },
+    {
+      "group": "id:tests",
+      "stamp": "Filmix Smart",
+      "image": "http://filmix.tv/msx/msx-logo.png",
+      "action": "link:http://filmix.tv/"
+    },
+    {
+      "break": "page",
+      "badge": "Page Break",
+      "group": "id:stores",
+      "label": "37"
+    },
+    {
+      "group": "id:stores",
+      "label": "38"
+    },
+    {
+      "break": "line",
+      "badge": "Line Break",
+      "group": "id:lamps",
+      "context": "Context 2",
+      "label": "21"
+    },
+    {
+      "group": "id:lamps",
+      "context": "Context 2",
+      "label": "22"
+    }
+  ]
+}
