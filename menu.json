@@ -125,6 +125,12 @@
     },
     {
       "group": "id:lamps",
+      "stamp": "Uncensored",
+      "image": "http://bylampa.online/img/logo-icon.svg",
+      "action": "link:http://bylampa.online/"
+    },
+    {
+      "group": "id:lamps",
       "stamp": "Lampa",
       "image": "http://lampa.mx/icons/apple-touch-icon.png",
       "action": "link:http://lampa.mx/",
