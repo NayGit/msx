@@ -120,8 +120,8 @@
       "break": "context:lamps",
       "group": "id:lamps",
       "stamp": "Prisma",
-      "image": "https://prisma.ws/icons/apple-touch-icon.png",
-      "action": "link:https://prisma.ws/"
+      "image": "https://prisma.ws/msx-logo.png",
+      "action": "link:http://prisma.ws/"
     },
     {
       "group": "id:lamps",
