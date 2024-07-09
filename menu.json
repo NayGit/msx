@@ -148,6 +148,26 @@
     },
     {
       "group": "id:lamps",
+      "stamp": "Lampac 1",
+      "image": "http://bwa-cloud.cfhttp.top/lampa-main/img/logo-icon.svg",
+      "imageColor": "red",
+      "action": "link:http://bwa-cloud.cfhttp.top",
+      "tag": "web",
+      "badge": "{txt:white:BwaJS}",
+      "badgeColor": "green"
+
+    },
+    {
+      "group": "id:lamps",
+      "stamp": "Lampac 2",
+      "image": "https://bwa-cloud.apn.monster/lampa-main/img/logo-icon.svg",
+      "action": "link:https://bwa-cloud.apn.monster",
+      "tag": "web",
+      "badge": "{txt:white:BwaJS}",
+      "badgeColor": "green"
+    },
+    {
+      "group": "id:lamps",
       "stamp": "Lampa",
       "image": "http://lampa.mx/icons/apple-touch-icon.png",
       "action": "link:http://lampa.mx/",
