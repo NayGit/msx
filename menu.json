@@ -50,6 +50,21 @@
       ]
     },
     {
+      "position": "context:others",
+      "offset": "0,0.25,0,-0.5",
+      "area": "0,1,12,5",
+      "template": {
+        "offset": "0,-0.5,0,0"
+      },
+      "items": [
+        {
+          "type": "space",
+          "layout": "0,0,12,1",
+          "headline": "ʕ ᵔᴥᵔ ʔ"
+        }
+      ]
+    },
+    {
       "position": "context:stores",
       "offset": "0,0.25,0,-0.5",
       "area": "0,1,12,5",
@@ -84,8 +99,9 @@
     "type": "default",
     "offset": "0,0,0,0",
     "layout": "0,0,2,2",
-    "alignment": "center|badge-center|stamp-center",
-    "group": "id:unknown"
+    "alignment": "center|badge-left|stamp-center",
+    "group": "id:unknown",
+    "badgeColor": "msx-red"
   },
   "items": [
     {
@@ -113,29 +129,45 @@
       "stamp": "Movielab",
       "image": "https://movielab.one/icons/Icon-192.png",
       "action": "menu:https://movielab.fun/msx/menu.json",
-      "tag": "ad",
-      "tagColor": "msx-red"
+      "badge": "{txt:white:ad}"
     },
     {
       "break": "context:lamps",
       "group": "id:lamps",
       "stamp": "Prisma",
-      "image": "https://prisma.ws/msx-logo.png",
-      "action": "link:http://prisma.ws/"
+      "image": "http://prisma.ws/msx-logo.png",
+      "action": "link:http://prisma.ws/",
+      "tag": "web"
     },
     {
       "group": "id:lamps",
-      "stamp": "Uncensored",
+      "stamp": "UnCensored",
       "image": "http://bylampa.online/img/logo-icon.svg",
-      "action": "link:http://bylampa.online/"
+      "action": "link:http://bylampa.online/",
+      "tag": "web"
     },
     {
       "group": "id:lamps",
       "stamp": "Lampa",
       "image": "http://lampa.mx/icons/apple-touch-icon.png",
       "action": "link:http://lampa.mx/",
-      "tag": "ad",
-      "tagColor": "msx-red"
+      "tag": "web",
+      "badge": "{txt:white:ad}"
+    },
+    {
+      "break": "context:others",
+      "group": "id:tests",
+      "stamp": "DRM-Play",
+      "image": "http://ott.drm-play.com/stbPlayer/400x400.png",
+      "action": "link:http://ott.drm-play.com/",
+      "tag": "Web"
+    },
+    {
+      "group": "id:others",
+      "stamp": "ForkPlayer",
+      "image": "http://msx.appfxml.com/msx/fork2.png",
+      "action": "link:http://browser.appfxml.com/",
+      "tag": "web"
     },
     {
       "break": "context:stores",
@@ -158,6 +190,12 @@
     },
     {
       "group": "id:stores",
+      "stamp": "ARKMV Station",
+      "action": "content:http://arkmv.ru/msx/start.json"
+    },
+    {
+      "break": "line",
+      "group": "id:stores",
       "stamp": "msxplayer.ru",
       "image": "http://msxplayer.ru/assets/msx-icon.png",
       "action": "menu:request:interaction:menu@http://plugins.msxplayer.ru/store.html"
@@ -169,62 +207,11 @@
       "action": "menu:request:interaction:json:eyJoYW5kbGVySWQiOiJzdG9yZSIsInJlcXVlc3QiOiJtZW51In0=@http://v4.msxplayer.ru/plugins/interactions/msxplayer/"
     },
     {
-      "group": "id:stores",
-      "stamp": "ARKMV Station",
-      "action": "content:http://arkmv.ru/msx/start.json"
-    },
-    {
+      "break": "line",
       "group": "id:stores",
       "stamp": "Launcher MSX",
       "image": "http://msx.benzac.de/img/icon_raw.png",
       "action": "menu:request:interaction:init@http://launcher.msx.benzac.de/interaction"
-    },
-    {
-      "break": "context:tests",
-      "group": "id:tests",
-      "stamp": "ForkPlayer",
-      "image": "http://msx.appfxml.com/msx/fork2.png",
-      "action": "link:http://browser.appfxml.com/"
-    },
-    {
-      "group": "id:tests",
-      "stamp": "DRM-Play",
-      "image": "http://drm-play.com/icon.png",
-      "action": "content:http://drm-play.com/msx/content.json"
-    },
-    {
-      "group": "id:tests",
-      "stamp": "DRM-Play",
-      "image": "https://ott.drm-play.com/stbPlayer/400x400.png",
-      "action": "link:http://ott.drm-play.com/"
-    },
-    {
-      "group": "id:tests",
-      "stamp": "Filmix Smart",
-      "image": "http://filmix.tv/msx/msx-logo.png",
-      "action": "link:http://filmix.tv/"
-    },
-    {
-      "break": "page",
-      "badge": "Page Break",
-      "group": "id:stores",
-      "label": "37"
-    },
-    {
-      "group": "id:stores",
-      "label": "38"
-    },
-    {
-      "break": "line",
-      "badge": "Line Break",
-      "group": "id:lamps",
-      "context": "Context 2",
-      "label": "21"
-    },
-    {
-      "group": "id:lamps",
-      "context": "Context 2",
-      "label": "22"
     }
   ]
 }
