@@ -1,0 +1,8 @@
+{
+  "name": "NayMSX",
+  "version": "1.0",
+  "parameter": "content:{PREFIX}{SERVER}/menu.json",
+  "launcher": {
+    "image": "http://naymsx.line.pm/msx-logo.jpg"
+  }
+}
