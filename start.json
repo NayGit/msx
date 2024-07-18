@@ -116,12 +116,6 @@
     {
       "break": "context:apps",
       "group": "id:apps",
-      "stamp": "Atodo",
-      "image": "http://atodo.fun/assets/images/icon.png?v=0.1",
-      "action": "menu:request:interaction:menu@http://atodo.fun/fun.html"
-    },
-    {
-      "group": "id:apps",
       "stamp": "Atodo WEB",
       "image": "http://atodo.fun/assets/images/icon.png?v=0.1",
       "action": "link:http://msx.atodo.fun/",
@@ -139,6 +133,20 @@
       "image": "https://movielab.one/icons/Icon-192.png",
       "action": "menu:https://movielab.fun/msx/menu.json",
       "badge": "{txt:white:ad}"
+    },
+    {
+      "group": "id:apps",
+      "type": "space"
+    },
+    {
+      "group": "id:apps",
+      "type": "space"
+    },
+    {
+      "group": "id:apps",
+      "stamp": "Atodo",
+      "image": "http://atodo.fun/assets/images/icon.png?v=0.1",
+      "action": "menu:request:interaction:menu@http://atodo.fun/fun.html"
     },
     {
       "break": "context:lamps",
@@ -225,15 +233,15 @@
     {
       "break": "line",
       "group": "id:stores",
-      "stamp": "msxplayer.ru",
-      "image": "http://msxplayer.ru/assets/msx-icon.png",
-      "action": "menu:request:interaction:menu@http://plugins.msxplayer.ru/store.html"
-    },
-    {
-      "group": "id:stores",
       "stamp": "v4.msxplayer.ru",
       "image": "http://msxplayer.ru/assets/msx-icon.png",
       "action": "menu:request:interaction:json:eyJoYW5kbGVySWQiOiJzdG9yZSIsInJlcXVlc3QiOiJtZW51In0=@http://v4.msxplayer.ru/plugins/interactions/msxplayer/"
+    },
+    {
+      "group": "id:stores",
+      "stamp": "msxplayer.ru",
+      "image": "http://msxplayer.ru/assets/msx-icon.png",
+      "action": "menu:request:interaction:menu@http://plugins.msxplayer.ru/store.html"
     },
     {
       "break": "line",
