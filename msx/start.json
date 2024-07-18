@@ -2,6 +2,7 @@
   "name": "NayMSX",
   "version": "1.0",
   "parameter": "content:{PREFIX}{SERVER}/start.json",
+  "dictionary": "http://naymsx.line.pm/msx-dictionary.json",
   "launcher": {
     "image": "http://naymsx.line.pm/msx-logo.jpg"
   }

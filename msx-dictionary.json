@@ -1,0 +1,25 @@
+{
+  "name": "Russian",
+  "version": "1.0.21",
+  "properties": {
+    "format:date": "dd.mm.yy",
+    "format:day": "D dd.mm",
+    "format:full_day": "DD, d MM yyyy",
+    "format:long_date": "d MM yyyy",
+    "format:long_day": "D dd.mm.yyyy",
+    "format:long_time": "h:mm:ss/ampm",
+    "format:separator": ", ",
+    "format:time": "h:mm/ampm",
+    "list:day_long_names": "Воскресенье,Понедельник,Вторник,Среда,Четверг,Пятница,Суббота",
+    "list:day_names": "Вс,Пон,Вт,Ср,Чт,Пт,Суб",
+    "list:month_long_names": "Январь,Февраль,Март,Апрель,Май,Июнь,Июль,Август,Сентябрь,Октябрь,Ноябрь,Декабрь",
+    "list:month_names": "Янв,Фев,Мар,Апр,Май,Июн,Июл,Авг,Сент,Окт,Ноя,Дек",
+    "unit:am": " AM",
+    "unit:day": " день",
+    "unit:days": " дни",
+    "unit:hours": " ч",
+    "unit:minutes": " мин",
+    "unit:pm": " PM",
+    "unit:seconds": " сек"
+  }
+}
