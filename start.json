@@ -3,7 +3,7 @@
   "version": "1.0",
   "parameter": "content:{PREFIX}{SERVER}/msx/start.json",
   "launcher": {
-    "image": "https://naygit.github.io/msx/msx-logo.jpg"
+    "image": "http://naymsx.line.pm/msx-logo.jpg"
   },
 
   "dictionary": "http://naymsx.line.pm/msx-dictionary.json",
