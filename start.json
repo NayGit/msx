@@ -22,9 +22,8 @@
         "type": "space",
         "offset": "-1,0.90,2,0",
         "layout": "0,5,12,1",
-        "alignment": "center",
-        "color": "msx-black",
-        "text": "Приложение полностью бесплатное и использует публичные ссылки для получения информации.{br}Вся доступная информация используется исключительно в познавательных целях."
+        "alignment": "center",        
+        "text": ""
       }
     ]
   },
@@ -111,16 +110,61 @@
     "layout": "0,0,2,2",
     "alignment": "center|badge-left|stamp-center",
     "group": "id:unknown",
-    "badgeColor": "msx-red"
+    "badgeColor": "msx-red",
+
+    "options": {
+      "headline": "{context:stamp}",
+      "caption": "opt/menu{tb}{ico:msx-red:stop} opt1{tb}{ico:msx-green:stop} opt2{tb}{ico:msx-yellow:stop} opt3",
+      "template": {
+        "enumerate": false,
+        "type": "control",
+        "layout": "0,0,8,1"
+      },
+      "items": [
+        {
+          "label": "\"shortcut\": true"
+        },
+        {
+          "key": "red|1|green|2|yellow|3",
+          "icon": "msx-blue:stop",
+          "label": " {tb} {ico:msx-red:stop} {ico:msx-green:stop} {ico:msx-yellow:stop}",
+          "action": ""
+        }
+      ]
+    },
+    "options": null
   },
   "items": [
     {
       "break": "context:apps",
       "group": "id:apps",
       "stamp": "Atodo WEB",
+      "tag": "Web",
       "image": "http://atodo.fun/assets/images/icon.png?v=0.1",
       "action": "link:http://msx.atodo.fun/",
-      "tag": "Web"
+      "options": {
+        "headline": "Atodo",
+        "caption": "opt/menu{tb}{ico:msx-red:stop} Atodo MSX",
+        "template": {
+          "enumerate": false,
+          "type": "control",
+          "layout": "0,0,8,1"
+        },
+        "items": [
+          {
+            "icon": "msx-glass:stop",
+            "label": "Atodo Web",
+            "action": "link:http://msx.atodo.fun/"
+          },
+          {
+            "key": "red|1",
+            "icon": "msx-red:stop",
+            "label": "Atodo MSX",
+            "action": "menu:request:interaction:menu@http://atodo.fun/fun.html",
+            "focus": true
+          }
+        ]
+      }
     },
     {
       "group": "id:apps",
@@ -131,9 +175,9 @@
     {
       "group": "id:apps",
       "stamp": "Movielab",
+      "badge": "{txt:white:ad}",
       "image": "https://movielab.one/icons/Icon-192.png",
-      "action": "menu:https://movielab.fun/msx/menu.json",
-      "badge": "{txt:white:ad}"
+      "action": "menu:https://movielab.fun/msx/menu.json"
     },
     {
       "group": "id:apps",
@@ -153,59 +197,71 @@
       "break": "context:lamps",
       "group": "id:lamps",
       "stamp": "Prisma",
+      "tag": "web",
       "image": "http://prisma.ws/msx-logo.png",
-      "action": "link:http://prisma.ws/",
-      "tag": "web"
+      "action": "link:http://prisma.ws/"
     },
     {
       "group": "id:lamps",
       "stamp": "UnCensored",
+      "tag": "web",
       "image": "http://bylampa.online/img/logo-icon.svg",
-      "action": "link:http://bylampa.online/",
-      "tag": "web"
+      "action": "link:http://bylampa.online/"
     },
     {
       "group": "id:lamps",
-      "stamp": "Lampac 1",
+      "stamp": "Lampac",
+      "tag": "web",
+      "badge": "{txt:white:BwaJS}",
+      "badgeColor": "green",
       "image": "http://bwa-cloud.cfhttp.top/lampa-main/img/logo-icon.svg",
-      "imageColor": "red",
       "action": "link:http://bwa-cloud.cfhttp.top",
-      "tag": "web",
-      "badge": "{txt:white:BwaJS}",
-      "badgeColor": "green"
-
-    },
-    {
-      "group": "id:lamps",
-      "stamp": "Lampac 2",
-      "image": "https://bwa-cloud.apn.monster/lampa-main/img/logo-icon.svg",
-      "action": "link:https://bwa-cloud.apn.monster",
-      "tag": "web",
-      "badge": "{txt:white:BwaJS}",
-      "badgeColor": "green"
+      "options": {
+        "headline": "Lampac",
+        "caption": "opt/menu{tb}{ico:msx-red:stop} Lampac_2",
+        "template": {
+          "enumerate": false,
+          "type": "control",
+          "layout": "0,0,8,1"
+        },
+        "items": [
+          {
+            "icon": "msx-glass:stop",
+            "label": "Lampac_1",
+            "action": "link:http://bwa-cloud.cfhttp.top",
+            "focus": true
+          },
+          {
+            "key": "red|1",
+            "icon": "msx-red:stop",
+            "label": "Lampac_2",
+            "action": "link:https://bwa-cloud.apn.monster"
+          }
+        ]
+      }
     },
     {
       "group": "id:lamps",
       "stamp": "Lampa",
-      "image": "http://lampa.mx/icons/apple-touch-icon.png",
-      "action": "link:http://lampa.mx/",
       "tag": "web",
-      "badge": "{txt:white:ad}"
+      "badge": "{txt:white:ad}",
+      "image": "http://lampa.mx/icons/apple-touch-icon.png",
+      "action": "link:http://lampa.mx/"
     },
     {
       "break": "context:others",
       "group": "id:tests",
       "stamp": "DRM-Play",
+      "tag": "Web",
       "image": "http://ott.drm-play.com/stbPlayer/400x400.png",
-      "action": "link:http://ott.drm-play.com/",
-      "tag": "Web"
+      "action": "link:http://ott.drm-play.com/"
     },
     {
       "group": "id:others",
       "stamp": "ForkPlayer",
+      "tag": "web",
       "image": "http://msx.appfxml.com/msx/fork2.png",
-      "action": "link:http://browser.appfxml.com/",
-      "tag": "web"
+      "action": "link:http://browser.appfxml.com/"
     },
     {
       "break": "context:stores",
