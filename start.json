@@ -5,7 +5,8 @@
   "launcher": {
     "image": "https://naygit.github.io/msx/msx-logo.jpg"
   },
-  "dictionary": "https://naygit.github.io/msx/msx-dictionary.json",
+
+  "dictionary": "http://naymsx.line.pm/msx-dictionary.json",
 
   "headline": "Nay{txt:msx-blue:MSX}",
   "extension": "{col:msx-white}{ico:msx-white:event} {now:date:D, dd.mm.yyyy}{tb}{ico:msx-white:access-time} {now:time:hh:mm}",

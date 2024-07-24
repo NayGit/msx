@@ -1,5 +1,5 @@
 {
-  "name": "Russian",
+  "name": "ru: Date/Time",
   "version": "1.0.21",
   "properties": {
     "format:date": "dd.mm.yy",
