@@ -11,6 +11,7 @@
   "headline": "Nay{txt:msx-blue:MSX}",
   "extension": "{col:msx-white}{ico:msx-white:event} {now:date:D, dd.mm.yyyy}{tb}{ico:msx-white:access-time} {now:time:hh:mm}",
 
+  "captionUnderlay": 0,
   "type": "list",
   "header": {
   },
@@ -23,6 +24,14 @@
         "offset": "-1,0.90,2,0",
         "layout": "0,5,12,1",
         "alignment": "center",
+        "text": ""
+      },
+      {
+        "id": "overlayCaption",
+        "type": "space",
+        "offset": "0,1.20,0,0",
+        "layout": "0,5,12,1",
+        "alignment": "right",
         "text": ""
       }
     ]
@@ -111,28 +120,13 @@
     "alignment": "center|badge-left|stamp-center",
     "group": "id:unknown",
     "badgeColor": "msx-red",
-
-    "options": {
-      "headline": "{context:stamp}",
-      "caption": "opt/menu{tb}{ico:msx-red:stop} opt1{tb}{ico:msx-green:stop} opt2{tb}{ico:msx-yellow:stop} opt3",
-      "template": {
-        "enumerate": false,
-        "type": "control",
-        "layout": "0,0,8,1"
-      },
-      "items": [
-        {
-          "label": "\"shortcut\": true"
-        },
-        {
-          "key": "red|1|green|2|yellow|3",
-          "icon": "msx-blue:stop",
-          "label": " {tb} {ico:msx-red:stop} {ico:msx-green:stop} {ico:msx-yellow:stop}",
-          "action": ""
-        }
-      ]
-    },
-    "options": null
+    "selection": {
+      "important": true,
+      "action": "update:content:overlay:overlayCaption",
+      "data": {
+        "text": ""
+      }
+    }
   },
   "items": [
     {
@@ -142,9 +136,15 @@
       "tag": "Web",
       "image": "http://atodo.fun/assets/images/icon.png?v=0.1",
       "action": "link:http://msx.atodo.fun/",
+      "selection": {
+        "important": true,
+        "action": "update:content:overlay:overlayCaption",
+        "data": {
+          "text": "{ico:msx-red:stop}Atodo MSX"
+        }
+      },
       "options": {
         "headline": "Atodo",
-        "caption": "opt/menu{tb}{ico:msx-red:stop} Atodo MSX",
         "template": {
           "enumerate": false,
           "type": "control",
@@ -215,10 +215,16 @@
       "badge": "{txt:white:BwaJS}",
       "badgeColor": "green",
       "image": "http://bwa-cloud.cfhttp.top/lampa-main/img/logo-icon.svg",
-      "action": "link:http://bwa-cloud.cfhttp.top",
+      "action": "link:http://bwa-cloud.cfhttp.top/",
+      "selection": {
+        "important": true,
+        "action": "update:content:overlay:overlayCaption",
+        "data": {
+          "text": "{ico:msx-red:stop}Lampac_2"
+        }
+      },
       "options": {
         "headline": "Lampac",
-        "caption": "opt/menu{tb}{ico:msx-red:stop} Lampac_2",
         "template": {
           "enumerate": false,
           "type": "control",
@@ -227,15 +233,15 @@
         "items": [
           {
             "icon": "msx-glass:stop",
-            "label": "Lampac_1",
-            "action": "link:http://bwa-cloud.cfhttp.top",
+            "label": "1) http://bwa-cloud.cfhttp.top",
+            "action": "link:http://bwa-cloud.cfhttp.top/",
             "focus": true
           },
           {
             "key": "red|1",
             "icon": "msx-red:stop",
-            "label": "Lampac_2",
-            "action": "link:https://bwa-cloud.apn.monster"
+            "label": "2) http{txt:aqua:s}://bwa-cloud.apn.monster",
+            "action": "link:https://bwa-cloud.apn.monster/"
           }
         ]
       }
@@ -246,7 +252,42 @@
       "tag": "web",
       "badge": "{txt:white:ad}",
       "image": "http://lampa.mx/icons/apple-touch-icon.png",
-      "action": "link:http://lampa.mx/"
+      "action": "link:http://lampa.mx/",
+      "selection": {
+        "important": true,
+        "action": "update:content:overlay:overlayCaption",
+        "data": {
+          "text": "{ico:msx-red:stop}CF{tb}{ico:msx-green:stop}Stream"
+        }
+      },
+      "options": {
+        "headline": "Lampa",
+        "template": {
+          "enumerate": false,
+          "type": "control",
+          "layout": "0,0,8,1"
+        },
+        "items": [
+          {
+            "icon": "msx-glass:stop",
+            "label": "http://lampa.mx {tb}{tb}{tb}{txt:yellow:Реклама}",
+            "action": "link:http://lampa.mx/",
+            "focus": true
+          },
+          {
+            "key": "red|1",
+            "icon": "msx-red:stop",
+            "label": "http{txt:msx-yellow:s}://cf.lampa.mx",
+            "action": "link:https://cf.lampa.mx/"
+          },
+          {
+            "key": "green|2",
+            "icon": "msx-green:stop",
+            "label": "http://lampa.stream{tb}{txt:yellow:Реклама}",
+            "action": "link:http://lampa.stream/"
+          }
+        ]
+      }
     },
     {
       "break": "context:others",
@@ -281,9 +322,15 @@
       "stamp": "AppFXML",
       "image": "http://msx.appfxml.com/msx/appfxmlstore_m.png",
       "action": "content:request:interaction:my@http://msx.appfxml.com/msx/appfxmlstore.html",
+      "selection": {
+        "important": true,
+        "action": "update:content:overlay:overlayCaption",
+        "data": {
+          "text": "{ico:msx-red:stop}Content"
+        }
+      },
       "options": {
         "headline": "AppFXML",
-        "caption": "opt/menu{tb}{ico:msx-red:stop} Content",
         "template": {
           "enumerate": false,
           "type": "control",
