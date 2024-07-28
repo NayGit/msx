@@ -295,7 +295,42 @@
       "stamp": "DRM-Play",
       "tag": "Web",
       "image": "http://ott.drm-play.com/stbPlayer/400x400.png",
-      "action": "link:http://ott.drm-play.com/"
+      "action": "link:http://ott.drm-play.com/",
+      "selection": {
+        "important": true,
+        "action": "update:content:overlay:overlayCaption",
+        "data": {
+          "text": "{ico:msx-red:stop}DRM-Play{tb}{ico:msx-green:stop}ATV"
+        }
+      },
+      "options": {
+        "headline": "DRM-Play",
+        "template": {
+          "enumerate": false,
+          "type": "control",
+          "layout": "0,0,8,1"
+        },
+        "items": [
+          {
+            "icon": "msx-glass:stop",
+            "label": "DRM-Play OTT",
+            "action": "link:http://ott.drm-play.com/",
+            "focus": true
+          },
+          {
+            "key": "red|1",
+            "icon": "msx-red:stop",
+            "label": "DRM-Play",
+            "action": "link:http://drm-play.com/"
+          },
+          {
+            "key": "green|2",
+            "icon": "msx-green:stop",
+            "label": "DRM-Play ATV",
+            "action": "link:http://ott.drm-play.com/android/"
+          }
+        ]
+      }
     },
     {
       "group": "id:others",
