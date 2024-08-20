@@ -203,6 +203,13 @@
     },
     {
       "group": "id:lamps",
+      "stamp": "LAMP!SHE",
+      "tag": "web",
+      "image": "http://web.lampishe.cc/img/lampishe.svg",
+      "action": "link:http://web.lampishe.cc/"
+    },
+    {
+      "group": "id:lamps",
       "stamp": "UnCensored",
       "tag": "web",
       "image": "http://bylampa.online/img/logo-icon.svg",
@@ -342,15 +349,89 @@
     {
       "break": "context:stores",
       "group": "id:stores",
-      "stamp": "NoName",
-      "image": "http://msx.nnmtv.fun/msx/img/noname.png",
-      "action": "content:http://msx.nnmtv.fun/msx/start.json"
-    },
-    {
-      "group": "id:stores",
       "stamp": "WALS",
       "image": "https://raw.githubusercontent.com/wals09/msx/main/img/wals.png",
       "action": "content:https://wals09.github.io/msx/menu.json"
+    },
+    {
+      "group": "id:stores",
+      "stamp": "MSXPlayer",
+      "image": "http://msxplayer.ru/assets/msx-icon.png",
+      "action": "menu:request:interaction:json:eyJoYW5kbGVySWQiOiJzdG9yZSIsInJlcXVlc3QiOiJtZW51In0=@http://v4.msxplayer.ru/plugins/interactions/msxplayer/",
+      "selection": {
+        "important": true,
+        "action": "update:content:overlay:overlayCaption",
+        "data": {
+          "text": "{ico:msx-red:stop}v3"
+        }
+      },
+      "options": {
+        "headline": "MSXPlayer",
+        "template": {
+          "enumerate": false,
+          "type": "control",
+          "layout": "0,0,8,1"
+        },
+        "items": [
+          {
+            "icon": "msx-glass:stop",
+            "label": "v4.MSXPlayer.ru",
+            "action": "menu:request:interaction:json:eyJoYW5kbGVySWQiOiJzdG9yZSIsInJlcXVlc3QiOiJtZW51In0=@http://v4.msxplayer.ru/plugins/interactions/msxplayer/",
+            "focus": true
+          },
+          {
+            "key": "red|1",
+            "icon": "msx-red:stop",
+            "label": "MSXPlayer.ru",
+            "action": "menu:request:interaction:menu@http://plugins.msxplayer.ru/store.html"
+          }
+        ]
+      }
+    },
+    {
+      "group": "id:stores",
+      "stamp": "NoName",
+      "image": "http://msx.nnmtv.fun/msx/img/noname.png",
+      "action": "menu:request:interaction:menu@https://nnmtv.github.io/launcher/store.html",
+      "selection": {
+        "important": true,
+        "action": "update:content:overlay:overlayCaption",
+        "data": {
+          "text": "{ico:msx-red:stop}MSX{tb}{ico:msx-green:stop}GitHub"
+        }
+      },
+      "options": {
+        "headline": "NoName",
+        "template": {
+          "enumerate": false,
+          "type": "control",
+          "layout": "0,0,8,1"
+        },
+        "items": [
+          {
+            "icon": "msx-glass:stop",
+            "label": "NoName Лаунчер",
+            "action": "menu:request:interaction:menu@https://nnmtv.github.io/launcher/store.html",
+            "focus": true
+          },
+          {
+            "key": "red|1",
+            "icon": "msx-red:stop",
+            "label": "NoName Портал MSX",
+            "action": "content:http://msx.nnmtv.fun/msx/start.json"
+          },
+          {
+            "key": "green|2",
+            "icon": "msx-green:stop",
+            "label": "NoName Портал GitHub",
+            "action": "content:https://raw.githubusercontent.com/nekto966/msx/main/start.json"
+          },
+          {
+            "type": "space",
+            "action": "content:http://nnmtv.fun/msx/start.json"
+          }
+        ]
+      }
     },
     {
       "group": "id:stores",
@@ -391,19 +472,6 @@
       "group": "id:stores",
       "stamp": "ARKMV Station",
       "action": "content:http://arkmv.ru/msx/start.json"
-    },
-    {
-      "break": "line",
-      "group": "id:stores",
-      "stamp": "v4.msxplayer.ru",
-      "image": "http://msxplayer.ru/assets/msx-icon.png",
-      "action": "menu:request:interaction:json:eyJoYW5kbGVySWQiOiJzdG9yZSIsInJlcXVlc3QiOiJtZW51In0=@http://v4.msxplayer.ru/plugins/interactions/msxplayer/"
-    },
-    {
-      "group": "id:stores",
-      "stamp": "msxplayer.ru",
-      "image": "http://msxplayer.ru/assets/msx-icon.png",
-      "action": "menu:request:interaction:menu@http://plugins.msxplayer.ru/store.html"
     },
     {
       "break": "line",
