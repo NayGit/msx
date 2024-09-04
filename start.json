@@ -133,14 +133,14 @@
       "break": "context:apps",
       "group": "id:apps",
       "stamp": "Atodo WEB",
-      "tag": "Web",
-      "image": "http://atodo.fun/assets/images/icon.png?v=0.1",
-      "action": "link:http://msx.atodo.fun/",
+      "image": "http://atodo.fun/assets/images/logo.png?v=0.1",
+      "imageFiller": "width-center",
+      "action": "menu:request:interaction:menu@http://atodo.fun/fun.html",
       "selection": {
         "important": true,
         "action": "update:content:overlay:overlayCaption",
         "data": {
-          "text": "{ico:msx-red:stop}Atodo MSX"
+          "text": "{ico:msx-red:stop}Atodo WEB"
         }
       },
       "options": {
@@ -153,15 +153,15 @@
         "items": [
           {
             "icon": "msx-glass:stop",
-            "label": "Atodo Web",
-            "action": "link:http://msx.atodo.fun/"
+            "label": "Atodo MSX",
+            "action": "menu:request:interaction:menu@http://atodo.fun/fun.html",
+            "focus": true
           },
           {
             "key": "red|1",
             "icon": "msx-red:stop",
-            "label": "Atodo MSX",
-            "action": "menu:request:interaction:menu@http://atodo.fun/fun.html",
-            "focus": true
+            "label": "Atodo Web",
+            "action": "link:http://msx.atodo.fun/"
           }
         ]
       }
@@ -180,33 +180,12 @@
       "action": "menu:https://movielab.fun/msx/menu.json"
     },
     {
-      "group": "id:apps",
-      "type": "space"
-    },
-    {
-      "group": "id:apps",
-      "type": "space"
-    },
-    {
-      "group": "id:apps",
-      "stamp": "Atodo",
-      "image": "http://atodo.fun/assets/images/icon.png?v=0.1",
-      "action": "menu:request:interaction:menu@http://atodo.fun/fun.html"
-    },
-    {
       "break": "context:lamps",
       "group": "id:lamps",
       "stamp": "Prisma",
       "tag": "web",
       "image": "http://prisma.ws/msx-logo.png",
       "action": "link:http://prisma.ws/"
-    },
-    {
-      "group": "id:lamps",
-      "stamp": "LAMP!SHE",
-      "tag": "web",
-      "image": "http://web.lampishe.cc/img/lampishe.svg",
-      "action": "link:http://web.lampishe.cc/"
     },
     {
       "group": "id:lamps",
@@ -295,6 +274,15 @@
           }
         ]
       }
+    },
+    {
+      "group": "id:lamps",
+      "stamp": "LAMP!SHE",
+      "tag": "web",
+      "badge": "{txt:white:ATV}",
+      "badgeColor": "msx-yellow",
+      "image": "http://web.lampishe.cc/img/lampishe.svg",
+      "action": "link:http://web.lampishe.cc/"
     },
     {
       "break": "context:others",
