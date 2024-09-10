@@ -120,6 +120,8 @@
     "alignment": "center|badge-left|stamp-center",
     "group": "id:unknown",
     "badgeColor": "msx-red",
+    "imageFiller": "height-center",
+    "imageHeight": 1.45,
     "selection": {
       "important": true,
       "action": "update:content:overlay:overlayCaption",
@@ -132,9 +134,8 @@
     {
       "break": "context:apps",
       "group": "id:apps",
-      "stamp": "Atodo WEB",
-      "image": "http://atodo.fun/assets/images/logo.png?v=0.1",
-      "imageFiller": "width-center",
+      "stamp": "Atodo",
+      "image": "http://atodo.fun/assets/images/icon.png",
       "action": "menu:request:interaction:menu@http://atodo.fun/fun.html",
       "selection": {
         "important": true,
@@ -169,6 +170,7 @@
     {
       "group": "id:apps",
       "stamp": "MOOVIES",
+      "imageFiller": "width-center",
       "image": "http://moovies.uz/images/logo.png",
       "action": "menu:request:interaction:init@http://moovies.uz/index.html"
     },
@@ -193,6 +195,16 @@
       "tag": "web",
       "image": "http://bylampa.online/img/logo-icon.svg",
       "action": "link:http://bylampa.online/"
+    },
+    {
+      "group": "id:lamps",
+      "stamp": "@Lampa_Land",
+      "tag": "web",
+      "badge": "{txt:white:Skaz}",
+      "badgeColor": "green",
+      "imageFiller": "width-center",
+      "image": "http://lampa.land/lampa-main/msx-logo.png",
+      "action": "link:http://lampa.land/"
     },
     {
       "group": "id:lamps",
@@ -237,6 +249,7 @@
       "stamp": "Lampa",
       "tag": "web",
       "badge": "{txt:white:ad}",
+      "imageFiller": "width-center",
       "image": "http://lampa.mx/icons/apple-touch-icon.png",
       "action": "link:http://lampa.mx/",
       "selection": {
@@ -281,6 +294,7 @@
       "tag": "web",
       "badge": "{txt:white:ATV}",
       "badgeColor": "msx-yellow",
+      "imageFiller": "width-center",
       "image": "http://web.lampishe.cc/img/lampishe.svg",
       "action": "link:http://web.lampishe.cc/"
     },
@@ -289,6 +303,7 @@
       "group": "id:tests",
       "stamp": "DRM-Play",
       "tag": "Web",
+      "imageFiller": "width-center",
       "image": "http://ott.drm-play.com/stbPlayer/400x400.png",
       "action": "link:http://ott.drm-play.com/",
       "selection": {
@@ -331,6 +346,7 @@
       "group": "id:others",
       "stamp": "ForkPlayer",
       "tag": "web",
+      "imageFiller": "width-center",
       "image": "http://msx.appfxml.com/msx/fork2.png",
       "action": "link:http://browser.appfxml.com/"
     },
@@ -338,12 +354,14 @@
       "break": "context:stores",
       "group": "id:stores",
       "stamp": "WALS",
+      "imageFiller": "width-center",
       "image": "https://raw.githubusercontent.com/wals09/msx/main/img/wals.png",
       "action": "content:https://wals09.github.io/msx/menu.json"
     },
     {
       "group": "id:stores",
       "stamp": "MSXPlayer",
+      "imageFiller": "width-center",
       "image": "http://msxplayer.ru/assets/msx-icon.png",
       "action": "menu:request:interaction:json:eyJoYW5kbGVySWQiOiJzdG9yZSIsInJlcXVlc3QiOiJtZW51In0=@http://v4.msxplayer.ru/plugins/interactions/msxplayer/",
       "selection": {
@@ -456,6 +474,14 @@
         ]
       }
     },
+
+    {
+      "group": "id:stores",
+      "stamp": "Land",
+      "badge": "{txt:white:Skaz}",
+      "badgeColor": "green",
+      "action": "content:http://lampa.land/msx/start.json"
+    },
     {
       "group": "id:stores",
       "stamp": "ARKMV Station",
@@ -465,6 +491,7 @@
       "break": "line",
       "group": "id:stores",
       "stamp": "Launcher MSX",
+      "imageFiller": "width-center",
       "image": "http://msx.benzac.de/img/icon_raw.png",
       "action": "menu:request:interaction:init@http://launcher.msx.benzac.de/interaction"
     }
