@@ -184,10 +184,49 @@
     {
       "break": "context:lamps",
       "group": "id:lamps",
+      "stamp": "NoName",
+      "tag": "web",
+      "badge": "{txt:white:Lite}",
+      "badgeColor": "green",
+      "imageFiller": "width-center",
+      "image": "http://msx.nnmtv.fun/msx/img/lampa_lite.jpg",
+      "action": "link:http://nnmtv.fun/lamlit/"
+    },
+    {
+      "group": "id:lamps",
       "stamp": "Prisma",
       "tag": "web",
-      "image": "http://prisma.ws/msx-logo.png",
-      "action": "link:http://prisma.ws/"
+      "image": "http://prisma.kim/msx-logo.png",
+      "action": "link:http://prisma.kim/",
+      "selection": {
+        "important": true,
+        "action": "update:content:overlay:overlayCaption",
+        "data": {
+          "text": "{ico:msx-red:stop}ws"
+        }
+      },
+      "options": {
+        "headline": "Prisma",
+        "template": {
+          "enumerate": false,
+          "type": "control",
+          "layout": "0,0,8,1"
+        },
+        "items": [
+          {
+            "icon": "msx-glass:stop",
+            "label": ".kim",
+            "action": "link:http://prisma.kim/",
+            "focus": true
+          },
+          {
+            "key": "red|1",
+            "icon": "msx-red:stop",
+            "label": ".ws",
+            "action": "link:http://prisma.ws/"
+          }
+        ]
+      }
     },
     {
       "group": "id:lamps",
@@ -289,18 +328,8 @@
       }
     },
     {
-      "group": "id:lamps",
-      "stamp": "LAMP!SHE",
-      "tag": "web",
-      "badge": "{txt:white:ATV}",
-      "badgeColor": "msx-yellow",
-      "imageFiller": "width-center",
-      "image": "http://web.lampishe.cc/img/lampishe.svg",
-      "action": "link:http://web.lampishe.cc/"
-    },
-    {
       "break": "context:others",
-      "group": "id:tests",
+      "group": "id:others",
       "stamp": "DRM-Play",
       "tag": "Web",
       "imageFiller": "width-center",
@@ -349,6 +378,66 @@
       "imageFiller": "width-center",
       "image": "http://msx.appfxml.com/msx/fork2.png",
       "action": "link:http://browser.appfxml.com/"
+    },
+    {
+      "group": "id:others",
+      "stamp": "WebVideoCaster",
+      "tag": "web",
+      "image": "http://www.cast2tv.io/wvc-logo.png",
+      "action": "link:http://www.cast2tv.io/",
+      "selection": {
+        "important": true,
+        "action": "update:content:overlay:overlayCaption",
+        "data": {
+          "text": "{ico:msx-red:stop}VEWD{tb}{ico:msx-green:stop}Foxxum{tb}{ico:msx-yellow:stop}Vidaa"
+        }
+      },
+      "options": {
+        "headline": "WebVideoCaster",
+        "template": {
+          "enumerate": false,
+          "type": "control",
+          "layout": "0,0,8,1"
+        },
+        "items": [
+          {
+            "icon": "msx-glass:stop",
+            "label": "Web Browser",
+            "action": "link:http://www.cast2tv.io/",
+            "focus": true
+          },
+          {
+            "key": "red|1",
+            "icon": "msx-red:stop",
+            "label": "VEWD",
+            "action": "link:http://vewd.webvideocaster.com/"
+          },
+          {
+            "key": "green|2",
+            "icon": "msx-green:stop",
+            "label": "Foxxum",
+            "action": "link:http://foxxum.webvideocaster.com/"
+          },
+          {
+            "key": "yellow|2",
+            "icon": "msx-yellow:stop",
+            "label": "Vidaa",
+            "action": "link:http://vidaa.webvideocaster.com/"
+          }
+        ]
+      }
+    },
+    { "type": "space" },
+    { "type": "space" },
+    {
+      "group": "id:lamps",
+      "stamp": "LAMP!SHE",
+      "tag": "web",
+      "badge": "{txt:white:ATV}",
+      "badgeColor": "msx-yellow",
+      "imageFiller": "width-center",
+      "image": "http://web.lampishe.cc/img/lampishe.svg",
+      "action": "link:http://web.lampishe.cc/"
     },
     {
       "break": "context:stores",
@@ -480,7 +569,8 @@
       "stamp": "Land",
       "badge": "{txt:white:Skaz}",
       "badgeColor": "green",
-      "action": "content:http://lampa.land/msx/start.json"
+      "action": "content:http://lampa.land/msx/start.json",
+      "sisi": "http://lampa.land/sisi/index.html"
     },
     {
       "group": "id:stores",
