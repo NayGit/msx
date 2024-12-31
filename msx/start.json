@@ -3,6 +3,6 @@
   "version": "1.0",
   "parameter": "content:{PREFIX}{SERVER}/start.json",
   "launcher": {
-    "image": "http://naymsx.line.pm/msx-logo.jpg"
+    "image": "http://naymsx.surge.sh/msx-logo.jpg"
   }
 }
