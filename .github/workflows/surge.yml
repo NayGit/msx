@@ -1,0 +1,28 @@
+name: surge.sh
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+  
+      - name: Add index.html
+        run: |
+            mv README.md index.html
+            sed -i '1i <pre>' index.html 
+            echo '</pre>' >> index.html
+
+      - name: Add CORS
+        run: echo "*" > CORS
+        
+      - name: Publish to surge.sh
+        uses: dswistowski/surge-sh-action@v1.1.0
+        with:
+          domain: ${{ vars.surge_domain }}
+          project: '.'
+          login: ${{ secrets.surge_login }}
+          token: ${{ secrets.surge_token }}

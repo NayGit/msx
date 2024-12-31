@@ -3,10 +3,10 @@
   "version": "1.0",
   "parameter": "content:{PREFIX}{SERVER}/msx/start.json",
   "launcher": {
-    "image": "http://naymsx.line.pm/msx-logo.jpg"
+    "image": "http://naymsx.surge.sh/msx-logo.jpg"
   },
 
-  "dictionary": "http://naymsx.line.pm/msx-dictionary.json",
+  "dictionary": "http://naymsx.surge.sh/msx-dictionary.json",
 
   "headline": "Nay{txt:msx-blue:MSX}",
   "extension": "{col:msx-white}{ico:msx-white:event} {now:date:D, dd.mm.yyyy}{tb}{ico:msx-white:access-time} {now:time:hh:mm}",
@@ -189,8 +189,8 @@
       "badge": "{txt:white:Lite}",
       "badgeColor": "green",
       "imageFiller": "width-center",
-      "image": "http://msx.nnmtv.fun/msx/img/lampa_lite.jpg",
-      "action": "link:http://nnmtv.fun/lamlit/"
+      "image": "http://msx.nnmtv.pw/msx/img/lampa_lite.jpg",
+      "action": "link:http://lite.nnmtv.pw/"
     },
     {
       "group": "id:lamps",
@@ -251,7 +251,7 @@
       "tag": "web",
       "badge": "{txt:white:BwaJS}",
       "badgeColor": "green",
-      "image": "http://bwa-cloud.cfhttp.top/lampa-main/img/logo-icon.svg",
+      "image": "http://bwa-cloud.cfhttp.top/img/logo-icon.svg",
       "action": "link:http://bwa-cloud.cfhttp.top/",
       "selection": {
         "important": true,
@@ -486,7 +486,7 @@
     {
       "group": "id:stores",
       "stamp": "NoName",
-      "image": "http://msx.nnmtv.fun/msx/img/noname.png",
+      "image": "http://msx.nnmtv.pw/msx/img/noname.png",
       "action": "menu:request:interaction:menu@https://nnmtv.github.io/launcher/store.html",
       "selection": {
         "important": true,
@@ -513,7 +513,7 @@
             "key": "red|1",
             "icon": "msx-red:stop",
             "label": "NoName Портал MSX",
-            "action": "content:http://msx.nnmtv.fun/msx/start.json"
+            "action": "content:http://msx.nnmtv.pw/msx/start.json"
           },
           {
             "key": "green|2",
@@ -523,7 +523,7 @@
           },
           {
             "type": "space",
-            "action": "content:http://nnmtv.fun/msx/start.json"
+            "action": "content:http://nnmtv.pw/msx/start.json"
           }
         ]
       }
