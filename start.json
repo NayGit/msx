@@ -242,7 +242,8 @@
       "badge": "{txt:white:Skaz}",
       "badgeColor": "green",
       "imageFiller": "width-center",
-      "image": "http://lampa.land/lampa-main/msx-logo.png",
+      "image": "http://naymsx.surge.sh/logo/lampaLand.jpg",
+      "imageLand": "http://lampa.land/lampa-main/msx-logo.png",
       "action": "link:http://lampa.land/"
     },
     {
@@ -487,12 +488,12 @@
       "group": "id:stores",
       "stamp": "NoName",
       "image": "http://msx.nnmtv.pw/msx/img/noname.png",
-      "action": "menu:request:interaction:menu@https://nnmtv.github.io/launcher/store.html",
+      "action": "menu:request:interaction:menu@http://launcher.nnmtv.pw/store.html",
       "selection": {
         "important": true,
         "action": "update:content:overlay:overlayCaption",
         "data": {
-          "text": "{ico:msx-red:stop}MSX{tb}{ico:msx-green:stop}GitHub"
+          "text": "{ico:msx-red:stop}Портал"
         }
       },
       "options": {
@@ -506,20 +507,14 @@
           {
             "icon": "msx-glass:stop",
             "label": "NoName Лаунчер",
-            "action": "menu:request:interaction:menu@https://nnmtv.github.io/launcher/store.html",
+            "action": "menu:request:interaction:menu@http://launcher.nnmtv.pw/store.html",
             "focus": true
           },
           {
             "key": "red|1",
             "icon": "msx-red:stop",
-            "label": "NoName Портал MSX",
+            "label": "NoName Портал",
             "action": "content:http://msx.nnmtv.pw/msx/start.json"
-          },
-          {
-            "key": "green|2",
-            "icon": "msx-green:stop",
-            "label": "NoName Портал GitHub",
-            "action": "content:https://raw.githubusercontent.com/nekto966/msx/main/start.json"
           },
           {
             "type": "space",
@@ -563,7 +558,6 @@
         ]
       }
     },
-
     {
       "group": "id:stores",
       "stamp": "Land",
@@ -584,6 +578,17 @@
       "imageFiller": "width-center",
       "image": "http://msx.benzac.de/img/icon_raw.png",
       "action": "menu:request:interaction:init@http://launcher.msx.benzac.de/interaction"
+    },
+    { "type": "space" },
+    { "type": "space" },
+    { "type": "space" },
+    { "type": "space" },
+    {
+      "group": "id:stores",
+      "stamp": "TVRU",
+      "imageFiller": "width-center",
+      "image": "https://tvru.github.io/msx/img/tvmy-logo.png",
+      "action": "content:http://tvru.github.io/msx/menu.json"
     }
   ]
 }
