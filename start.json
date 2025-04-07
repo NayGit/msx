@@ -13,6 +13,8 @@
 
   "captionUnderlay": 0,
   "type": "list",
+  "compress": true,
+
   "header": {
   },
   "footer": {
@@ -30,7 +32,7 @@
         "id": "overlayCaption",
         "type": "space",
         "offset": "0,1.20,0,0",
-        "layout": "0,5,12,1",
+        "layout": "0,7,16,1",
         "alignment": "right",
         "text": ""
       }
@@ -38,76 +40,81 @@
   },
   "inserts": [
     {
+      "compress": false,
       "position": "context:apps",
       "offset": "0,0.25,0,-0.5",
-      "area": "0,1,12,5",
+      "area": "0,1,16,7",
       "template": {
         "offset": "0,-0.5,0,0"
       },
       "items": [
         {
           "type": "space",
-          "layout": "0,0,12,1",
+          "layout": "0,0,16,1",
           "headline": "Apps"
         }
       ]
     },
     {
+      "compress": false,
       "position": "context:lamps",
       "offset": "0,0.25,0,-0.5",
-      "area": "0,1,12,5",
+      "area": "0,1,16,7",
       "template": {
         "offset": "0,-0.5,0,0"
       },
       "items": [
         {
           "type": "space",
-          "layout": "0,0,12,1",
+          "layout": "0,0,16,1",
           "headline": "Лампы"
         }
       ]
     },
     {
+      "compress": false,
       "position": "context:others",
       "offset": "0,0.25,0,-0.5",
-      "area": "0,1,12,5",
+      "area": "0,1,16,7",
       "template": {
         "offset": "0,-0.5,0,0"
       },
       "items": [
         {
           "type": "space",
-          "layout": "0,0,12,1",
+          "layout": "0,0,16,1",
           "headline": "ʕ ᵔᴥᵔ ʔ"
         }
       ]
     },
     {
+      "compress": false,
       "position": "context:stores",
       "offset": "0,0.25,0,-0.5",
-      "area": "0,1,12,5",
+      "area": "0,1,16,7",
       "template": {
         "offset": "0,-0.5,0,0"
       },
       "items": [
         {
           "type": "space",
-          "layout": "0,0,12,1",
+          "layout": "0,0,16,1",
           "headline": "Stores"
         }
       ]
     },
     {
+      "compress": false,
       "position": "context:tests",
       "offset": "0,0.25,0,-0.5",
-      "area": "0,1,12,5",
+      "area": "0,1,16,7",
       "template": {
         "offset": "0,-0.5,0,0"
       },
       "items": [
         {
           "type": "space",
-          "layout": "0,0,12,1",
+          "layout": "0,0,16,1",
           "headline": "Test"
         }
       ]
@@ -328,6 +335,17 @@
         ]
       }
     },
+    { "type": "space" },
+    {
+      "group": "id:lamps",
+      "stamp": "LAMP!SHE",
+      "tag": "web",
+      "badge": "{txt:white:ATV}",
+      "badgeColor": "msx-yellow",
+      "imageFiller": "width-center",
+      "image": "http://web.lampishe.cc/img/lampishe.svg",
+      "action": "link:http://web.lampishe.cc/"
+    },
     {
       "break": "context:others",
       "group": "id:others",
@@ -385,12 +403,12 @@
       "stamp": "WebVideoCaster",
       "tag": "web",
       "image": "http://www.cast2tv.io/wvc-logo.png",
-      "action": "link:http://www.cast2tv.io/",
+      "action": "link:http://vewd.webvideocaster.com/",
       "selection": {
         "important": true,
         "action": "update:content:overlay:overlayCaption",
         "data": {
-          "text": "{ico:msx-red:stop}VEWD{tb}{ico:msx-green:stop}Foxxum{tb}{ico:msx-yellow:stop}Vidaa"
+          "text": "{ico:msx-red:stop}Foxxum{tb}{ico:msx-green:stop}Vidaa{tb}{ico:msx-yellow:stop}Web"
         }
       },
       "options": {
@@ -403,42 +421,30 @@
         "items": [
           {
             "icon": "msx-glass:stop",
-            "label": "Web Browser",
-            "action": "link:http://www.cast2tv.io/",
+            "label": "VEWD",
+            "action": "link:http://vewd.webvideocaster.com/",
             "focus": true
           },
           {
             "key": "red|1",
             "icon": "msx-red:stop",
-            "label": "VEWD",
-            "action": "link:http://vewd.webvideocaster.com/"
-          },
-          {
-            "key": "green|2",
-            "icon": "msx-green:stop",
             "label": "Foxxum",
             "action": "link:http://foxxum.webvideocaster.com/"
           },
           {
-            "key": "yellow|2",
-            "icon": "msx-yellow:stop",
+            "key": "green|2",
+            "icon": "msx-green:stop",
             "label": "Vidaa",
             "action": "link:http://vidaa.webvideocaster.com/"
+          },
+          {
+            "key": "yellow|3",
+            "icon": "msx-yellow:stop",
+            "label": "Web Browser",
+            "action": "link:http://www.cast2tv.io/"
           }
         ]
       }
-    },
-    { "type": "space" },
-    { "type": "space" },
-    {
-      "group": "id:lamps",
-      "stamp": "LAMP!SHE",
-      "tag": "web",
-      "badge": "{txt:white:ATV}",
-      "badgeColor": "msx-yellow",
-      "imageFiller": "width-center",
-      "image": "http://web.lampishe.cc/img/lampishe.svg",
-      "action": "link:http://web.lampishe.cc/"
     },
     {
       "break": "context:stores",
@@ -572,23 +578,19 @@
       "action": "content:http://arkmv.ru/msx/start.json"
     },
     {
+      "group": "id:stores",
+      "stamp": "TVRU",
+      "imageFiller": "width-center",
+      "image": "https://tvru.github.io/msx/img/tvmy-logo.png",
+      "action": "content:http://tvru.github.io/msx/menu.json"
+    },
+    {
       "break": "line",
       "group": "id:stores",
       "stamp": "Launcher MSX",
       "imageFiller": "width-center",
       "image": "http://msx.benzac.de/img/icon_raw.png",
       "action": "menu:request:interaction:init@http://launcher.msx.benzac.de/interaction"
-    },
-    { "type": "space" },
-    { "type": "space" },
-    { "type": "space" },
-    { "type": "space" },
-    {
-      "group": "id:stores",
-      "stamp": "TVRU",
-      "imageFiller": "width-center",
-      "image": "https://tvru.github.io/msx/img/tvmy-logo.png",
-      "action": "content:http://tvru.github.io/msx/menu.json"
     }
   ]
 }
