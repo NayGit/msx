@@ -191,16 +191,6 @@
     {
       "break": "context:lamps",
       "group": "id:lamps",
-      "stamp": "NoName",
-      "tag": "web",
-      "badge": "{txt:white:Lite}",
-      "badgeColor": "green",
-      "imageFiller": "width-center",
-      "image": "http://msx.nnmtv.pw/msx/img/lampa_lite.jpg",
-      "action": "link:http://lite.nnmtv.pw/"
-    },
-    {
-      "group": "id:lamps",
       "stamp": "Prisma",
       "tag": "web",
       "image": "http://prisma.kim/msx-logo.png",
@@ -241,6 +231,43 @@
       "tag": "web",
       "image": "http://bylampa.online/img/logo-icon.svg",
       "action": "link:http://bylampa.online/"
+    },
+    {
+      "group": "id:lamps",
+      "stamp": "NoName",
+      "tag": "web",
+      "image": "http://msx.nnmtv.pw/msx/img/lampa.png",
+      "action": "link:http://lampa.nnmtv.pw/",
+      "other": "3555",
+      "selection": {
+        "important": true,
+        "action": "update:content:overlay:overlayCaption",
+        "data": {
+          "text": "{ico:msx-red:stop}Lite"
+        }
+      },
+      "options": {
+        "headline": "NoName",
+        "template": {
+          "enumerate": false,
+          "type": "control",
+          "layout": "0,0,8,1"
+        },
+        "items": [
+          {
+            "icon": "msx-glass:stop",
+            "label": "Lampa",
+            "action": "link:http://lampa.nnmtv.pw/",
+            "focus": true
+          },
+          {
+            "key": "red|1",
+            "icon": "msx-red:stop",
+            "label": "Lite",
+            "action": "link:http://lite.nnmtv.pw/"
+          }
+        ]
+      }
     },
     {
       "group": "id:lamps",
