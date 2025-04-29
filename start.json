@@ -504,6 +504,48 @@
         ]
       }
     },
+{
+      "group": "id:others",
+      "stamp": "RuTube",
+      "tag": "web",
+      "image": "",
+      "action": "link:https://rutube.ru/tv-release/rutube.server-21.0.0/webos/",
+      "selection": {
+        "important": true,
+        "action": "update:content:overlay:overlayCaption",
+        "data": {
+          "text": "{ico:msx-red:stop}20{tb}{ico:msx-green:stop}31"
+        }
+      },
+      "options": {
+        "headline": "RuTube",
+        "template": {
+          "enumerate": false,
+          "type": "control",
+          "layout": "0,0,8,1"
+        },
+        "items": [
+          {
+            "icon": "msx-glass:stop",
+            "label": "21",
+            "action": "link:https://rutube.ru/tv-release/rutube.server-21.0.0/webos/",
+            "focus": true
+          },
+          {
+            "key": "red|1",
+            "icon": "msx-red:stop",
+            "label": "20",
+            "action": "link:https://rutube.ru/tv-release/rutube.server-20.0.0/webos/"
+          },
+          {
+            "key": "green|2",
+            "icon": "msx-green:stop",
+            "label": "31",
+            "action": "link:https://rutube.ru/tv-release/rutube.server-31.0.0/webos/"
+          }
+        ]
+      }
+    },
     {
       "break": "context:stores",
       "group": "id:stores",
